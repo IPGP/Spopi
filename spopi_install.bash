@@ -32,3 +32,9 @@ sudo pip install https://github.com/bonaime/seedlink_plotter/archive/master.zip
 
 #updates
 sudo apt-get --force-yes -y upgrade 
+
+#Disable screen_saver
+sudo echo '@xset s noblank' >> /home/pi/.config/lxsession/LXDE-pi/autostart
+sudo echo '@xset s off' >> /home/pi/.config/lxsession/LXDE-pi/autostart
+sudo echo '@xset -dpms' >> /home/pi/.config/lxsession/LXDE-pi/autostart
+sudo echo '@/home/pi/visu/screen_on.bash' >> /home/pi/.config/lxsession/LXDE-pi/autostart
