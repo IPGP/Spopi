@@ -26,7 +26,8 @@ fi
 sudo apt-get update
 sudo  apt-get upgrade
 sudo apt-get install python-obspy
-pip install lxml sqlalchemy
 
+#pip install lxml sqlalchemy
 
+#Seedlink-plotter install
 sudo pip install https://github.com/bonaime/seedlink_plotter/archive/master.zip
