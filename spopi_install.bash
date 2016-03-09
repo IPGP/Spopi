@@ -21,7 +21,6 @@ else
   echo "Obspy depo not installed, installing"
   sudo  echo  'deb http://deb.obspy.org jessie main' >> /etc/apt/sources.list
   sudo wget --quiet -O - https://raw.github.com/obspy/obspy/master/misc/debian/public.key | sudo apt-key add -
-
 fi
 
 sudo apt-get update
