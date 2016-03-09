@@ -12,7 +12,7 @@ sudo apt-get autoremove
 #updates
 sudo rpi-update
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get --force-yes -y upgrade 
 
 # Obspy installation
 sudo  echo  'deb http://deb.obspy.org jessie main' >> /etc/apt/sources.list
