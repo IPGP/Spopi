@@ -33,8 +33,18 @@ sudo pip install https://github.com/bonaime/seedlink_plotter/archive/master.zip
 #updates
 sudo apt-get --force-yes -y upgrade 
 
-#Disable screen_saver
-sudo echo '@xset s noblank' >> /home/pi/.config/lxsession/LXDE-pi/autostart
-sudo echo '@xset s off' >> /home/pi/.config/lxsession/LXDE-pi/autostart
-sudo echo '@xset -dpms' >> /home/pi/.config/lxsession/LXDE-pi/autostart
-sudo echo '@/home/pi/visu/screen_on.bash' >> /home/pi/.config/lxsession/LXDE-pi/autostart
+#Disable screen_saver 
+sudo echo '@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@sh ${HOME}/.config/lxsession/LXDE-pi/autokey.sh
+
+@xset s noblank
+@xset s off
+@xset -dpms
+@/home/pi/visu/screen_on.bash' > /home/pi/.config/lxsession/LXDE-pi/autostart
+
+sed -i 's/BLANK_TIME=30/BLANK_TIME=0/'  /etc/kbd/config
+sed -i 's/^POWERDOWN_TIME*/POWERDOWN_TIME=0/'  /etc/kbd/config
+
+
+
