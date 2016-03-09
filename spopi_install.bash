@@ -1,8 +1,9 @@
 #!/bin/bash
 
+apt-get update
 
 # Usefull packages installation
-sudo apt-get install --force-yes -y python-lxml python-scipy python-sqlalchemy python-suds python-tornado  subversion unclutter subversion xdotool dnsutils imagemagick libblas-dev liblapack-dev libatlas-base-dev gfortran libxslt1-dev tk-dev date x11vnc
+sudo apt-get install --force-yes -y python-matplotlib python-future python-lxml python-scipy python-sqlalchemy python-suds python-tornado  subversion unclutter subversion xdotool dnsutils imagemagick libblas-dev liblapack-dev libatlas-base-dev gfortran libxslt1-dev tk-dev date x11vnc
 
 # Remove  unused packages
 sudo apt-get --purge remove   epiphany-.* scratch* sonic-pi libreoffice* claws-mail greenfoot bluej alacarte  wolfram-engine omxplayer python-picamera wpasupplicant
