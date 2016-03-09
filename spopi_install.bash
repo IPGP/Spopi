@@ -21,7 +21,7 @@ fi
 
 sudo apt-get update
 sudo  apt-get upgrade
-sudo apt-get install python-obspy
+sudo apt-get -y install python-obspy
 
 #pip install lxml sqlalchemy
 
