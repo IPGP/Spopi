@@ -9,10 +9,6 @@ sudo apt-get --force-yes -y --purge remove   epiphany-.* scratch* sonic-pi libre
 sudo apt-get autoremove
 
 
-#updates
-sudo rpi-update
-sudo apt-get update
-sudo apt-get --force-yes -y upgrade 
 
 # Obspy installation
 if grep obspy /etc/apt/sources.list;
@@ -31,3 +27,6 @@ sudo apt-get install python-obspy
 
 #Seedlink-plotter install
 sudo pip install https://github.com/bonaime/seedlink_plotter/archive/master.zip
+
+#updates
+sudo apt-get --force-yes -y upgrade 
