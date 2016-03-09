@@ -15,9 +15,14 @@ sudo apt-get update
 sudo apt-get --force-yes -y upgrade 
 
 # Obspy installation
-sudo  echo  'deb http://deb.obspy.org jessie main' >> /etc/apt/sources.list
-sudo wget --quiet -O - https://raw.github.com/obspy/obspy/master/misc/debian/public.key | sudo apt-key add -
+if grep obspy /etc/apt/sources.list;
+  then echo "Obspy depo already installed"
+else
+  echo "Obspy depo not installed, installing"
+  sudo  echo  'deb http://deb.obspy.org jessie main' >> /etc/apt/sources.list
+  sudo wget --quiet -O - https://raw.github.com/obspy/obspy/master/misc/debian/public.key | sudo apt-key add -
 
+fi
 
 sudo apt-get update
 sudo  apt-get upgrade
