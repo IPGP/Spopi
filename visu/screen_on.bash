@@ -13,6 +13,11 @@ xset s off
 /usr/bin/killall screen_on.bash
 /usr/bin/killall ssh
 
+#Examples
+
+#2/3 of the screen with a drum plot and 1/3 of the screen with a line plot
 /home/pi/visu/drum-line
-/home/pi/visu/two-drums
+
+#half of the screen with a station, the other half with another one
+#/home/pi/visu/two-drums
 
