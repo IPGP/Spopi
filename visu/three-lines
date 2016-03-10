@@ -1,0 +1,55 @@
+#!/bin/bash
+
+#Station 1
+net='G'
+station='RER'
+channel='00BHZ'
+server=rtserver.ipgp.fr:18000
+
+# position=0, top of the screen
+# position=1, middle of the screen
+# position=2, bottom of the screen
+position=0
+
+back_trace=1h
+
+
+seedlink_p=/usr/local/bin/seedlink-plotter
+screen_l=`/usr/bin/xdpyinfo | awk -F'[ x]+' '/dimensions:/{print $3}'` 
+screen_h=`/usr/bin/xdpyinfo | awk -F'[ x]+' '/dimensions:/{print $4}'`
+
+$seedlink_p  --without-decoration --force  --seedlink_server "$server"  -s $net'_'$station:$channel --x_position 0 --y_position $((position*screen_h/3)) --x_size $screen_l --y_size $((screen_h/3)) -b $back_trace --line_plot &
+
+
+#Station 2
+net='G'
+station='SSB'
+channel='00BHZ'
+server=rtserver.ipgp.fr:18000
+
+# position=0, top of the screen
+# position=1, bottom of the screen
+# position=2, bottom of the screen
+position=1
+
+back_trace=1h
+
+$seedlink_p  --without-decoration --force  --seedlink_server "$server"  -s $net'_'$station:$channel --x_position 0 --y_position $((position*screen_h/3)) --x_size $screen_l --y_size $((screen_h/3)) -b $back_trace --line_plot &
+
+
+#Station 3
+net='G'
+station='FDF'
+channel='00BHZ'
+server=rtserver.ipgp.fr:18000
+
+# position=0, top of the screen
+# position=1, bottom of the screen
+# position=2, bottom of the screen
+position=2
+
+back_trace=1h
+
+$seedlink_p  --without-decoration --force  --seedlink_server "$server"  -s $net'_'$station:$channel --x_position 0 --y_position $((position*screen_h/3)) --x_size $screen_l --y_size $((screen_h/3)) -b $back_trace --line_plot &
+
+
