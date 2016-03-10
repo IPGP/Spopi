@@ -1,6 +1,6 @@
 #!/bin/bash
 
-apt-get update
+sudo apt-get update
 
 # Usefull packages installation
 sudo apt-get install --force-yes -y python-matplotlib  python-lxml python-scipy vim mosh python-sqlalchemy python-suds python-tornado  subversion unclutter subversion xdotool dnsutils imagemagick libblas-dev liblapack-dev libatlas-base-dev gfortran libxslt1-dev tk-dev tk-dev tk8.6-dev tcl8.6-dev x11vnc htop
@@ -52,6 +52,8 @@ wget -O /home/pi/visu/drum-line  https://raw.githubusercontent.com/IPGP/Spopi/ma
 wget -O /home/pi/visu/screen_off.bash https://raw.githubusercontent.com/IPGP/Spopi/master/visu/screen_off.bash
 wget -O /home/pi/visu/screen_on.bash https://raw.githubusercontent.com/IPGP/Spopi/master/visu/screen_on.bash
 wget -O /home/pi/visu/two-drums https://raw.githubusercontent.com/IPGP/Spopi/master/visu/two-drums
+
+chmod 755 /home/pi/visu/*
 
 #Crontabs
 (crontab -l ; echo "@reboot /usr/bin/unclutter -display :0 &") | crontab -
