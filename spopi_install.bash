@@ -6,7 +6,7 @@ sudo apt-get update
 sudo apt-get install --force-yes -y python-matplotlib  python-lxml python-scipy vim mosh python-sqlalchemy python-suds python-tornado  subversion unclutter subversion xdotool dnsutils imagemagick libblas-dev liblapack-dev libatlas-base-dev gfortran libxslt1-dev tk-dev tk-dev tk8.6-dev tcl8.6-dev x11vnc htop
 # Remove  unused packages
 sudo apt-get --force-yes -y --purge remove   epiphany-.* scratch* sonic-pi libreoffice* claws-mail greenfoot bluej alacarte  wolfram-engine omxplayer python-picamera wpasupplicant
-sudo apt-get autoremove
+sudo apt-get --force-yes -y autoremove
 
 #remove unused directory
 rm -fr /home/pi/Desktop /home/pi/Documents/ /home/pi/Downloads/ /home/pi/Music/ /home/pi/Pictures/ /home/pi/python_games/ /home/pi/Templates/ /home/pi/Videos/ /home/pi/Public/
