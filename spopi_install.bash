@@ -22,7 +22,6 @@ else
 fi
 
 sudo apt-get update
-sudo  apt-get upgrade
 sudo apt-get -y install python-obspy
 
 #pip install lxml sqlalchemy
@@ -31,7 +30,9 @@ sudo apt-get -y install python-obspy
 sudo pip install https://github.com/bonaime/seedlink_plotter/archive/master.zip
 
 #updates
-sudo apt-get --force-yes -y upgrade 
+sudo apt-get --force-yes -y upgrade
+rpi-update
+
 
 #Disable screen_saver 
 sudo echo '@lxpanel --profile LXDE-pi
