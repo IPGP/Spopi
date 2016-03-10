@@ -20,3 +20,6 @@ xset s off
 #half of the screen with a station, the other half with another one
 #/home/pi/visu/two-drums
 
+
+#3 line-plot stations
+#/home/pi/visu/three-lines
