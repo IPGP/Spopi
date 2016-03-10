@@ -28,7 +28,6 @@ sudo apt-get -y install python-obspy
 
 #Seedlink-plotter install
 sudo pip install https://github.com/bonaime/seedlink_plotter/archive/master.zip
-pip install --upgrade https://github.com/bonaime/seedlink_plotter/archive/master.zip
 
 #updates
 sudo apt-get --force-yes -y upgrade
