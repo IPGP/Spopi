@@ -10,8 +10,7 @@ xset s off
 #kill all previous seedlink-plotter
 /usr/bin/killall seedlink-plotter
 /usr/bin/killall python
-/usr/bin/killall screen_on.bash
-/usr/bin/killall ssh
+
 
 #Examples
 
