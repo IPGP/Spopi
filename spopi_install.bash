@@ -54,6 +54,7 @@ wget -O /home/pi/visu/drum-line  https://raw.githubusercontent.com/IPGP/Spopi/ma
 wget -O /home/pi/visu/screen_off.bash https://raw.githubusercontent.com/IPGP/Spopi/master/visu/screen_off.bash
 wget -O /home/pi/visu/screen_on.bash https://raw.githubusercontent.com/IPGP/Spopi/master/visu/screen_on.bash
 wget -O /home/pi/visu/two-drums https://raw.githubusercontent.com/IPGP/Spopi/master/visu/two-drums
+wget -O /home/pi/visu/three-lines https://raw.githubusercontent.com/IPGP/Spopi/master/visu/three-lines
 
 chmod 755 /home/pi/visu/*
 
