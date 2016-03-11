@@ -8,9 +8,6 @@ sudo apt-get install --force-yes -y python-matplotlib  pep8 python-dns python-da
 sudo apt-get --force-yes -y --purge remove   epiphany-.* scratch* sonic-pi libreoffice* claws-mail greenfoot bluej alacarte  wolfram-engine omxplayer python-picamera wpasupplicant
 sudo apt-get --force-yes -y autoremove
 
-#remove unused directory
-rm -fr /home/pi/Desktop /home/pi/Documents/ /home/pi/Downloads/ /home/pi/Music/ /home/pi/Pictures/ /home/pi/python_games/ /home/pi/Templates/ /home/pi/Videos/ /home/pi/Public/
-
 
 # Obspy installation
 if grep obspy /etc/apt/sources.list;
