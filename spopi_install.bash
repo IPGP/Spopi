@@ -63,4 +63,4 @@ chmod 755 /home/pi/visu/*
 (crontab -l ; echo "00 08  * * *  DISPLAY=:0 /home/pi/visu/screen_on.bash  2>/tmp/cron_stderr 1>/tmp/cron_stdout") | crontab -
 (crontab -l ; echo "# Spopi Off") | crontab -
 (crontab -l ; echo "00 17  * * * /home/pi/visu/screen_off.bash") | crontab -
-(crontab -l ; echo "00 * * * * /usr/bin/sudo sntp -s pool.ntp.org") | crontab -
+(crontab -l ; echo "00 * * * * /usr/bin/sudo /usr/bin/sntp -s pool.ntp.org") | crontab -
