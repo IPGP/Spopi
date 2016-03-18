@@ -18,7 +18,7 @@ seedlink_p=/usr/local/bin/seedlink-plotter
 screen_l=`/usr/bin/xdpyinfo | awk -F'[ x]+' '/dimensions:/{print $3}'` 
 screen_h=`/usr/bin/xdpyinfo | awk -F'[ x]+' '/dimensions:/{print $4}'`
 
-$seedlink_p  --without-decoration --force  --seedlink_server "$server"  -s $net'_'$station:$channel --x_position 0 --y_position $((position*screen_h/2)) --x_size $screen_l --y_size $((screen_h/2)) -b $back_trace   --events 7 &
+$seedlink_p  --without-decoration --force  --seedlink_server "$server"  -s $net'_'$station:$channel --x_position 0 --y_position $((position*screen_h/2)) --x_size $screen_l --y_size $((screen_h/2)) -b $back_trace  --update_time 20  --events 7 &
 
 #Station 2
 
@@ -33,6 +33,6 @@ position=1
 
 back_trace=5h
 
-$seedlink_p  --without-decoration --force  --seedlink_server "$server"  -s $net'_'$station:$channel --x_position 0 --y_position $((position*screen_h/2)) --x_size $screen_l --y_size $((screen_h/2)) -b $back_trace   --events 7 &
+$seedlink_p  --without-decoration --force  --seedlink_server "$server"  -s $net'_'$station:$channel --x_position 0 --y_position $((position*screen_h/2)) --x_size $screen_l --y_size $((screen_h/2)) -b $back_trace --update_time 20  --events 7  &
 
 
