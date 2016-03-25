@@ -11,6 +11,8 @@ xset s off
 /usr/bin/killall seedlink-plotter
 /usr/bin/killall python
 
+# Force system time through NTP
+/usr/bin/sudo /usr/bin/sntp -s pool.ntp.org
 
 #Examples
 
