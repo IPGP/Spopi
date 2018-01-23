@@ -1,7 +1,6 @@
 #!/bin/bash
 
-sudo /usr/bin/tvservice -p
-sudo /bin/chvt 9 && sudo /bin/chvt 7
+sudo /usr/bin/tvservice -p && sudo /bin/chvt 9 && sudo /bin/chvt 7 
 
 xset -dpms -d :0
 xset s off
