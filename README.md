@@ -58,7 +58,9 @@ wget -O /tmp/spopi_install.bash https://goo.gl/bEwmmC
 bash /tmp/spopi_install.bash
 ````
 It last between 10 and 20 minutes. At the end, you just have to reboot and enjoy !
-````sudo reboot````
+
+```sudo reboot```
+
 The stations plots will appears few seconds after reboot. Be patient !
 
 ## Spopi
