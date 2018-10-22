@@ -6,7 +6,7 @@ Spopi can only work on Raspberry Pi 2 and 3
 Download last Raspbian Jessie img [here](https://www.raspberrypi.org/downloads/raspbian/)
 * [Install Raspbian on Mac](https://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
 * [Install Raspbian on Linux](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
-* [Install Windows on Linux](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md)
+* [Install Raspbian on Windows](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md)
 
 Then you can insert the µSD card in the Raspberry Pi 2 or 3
 
