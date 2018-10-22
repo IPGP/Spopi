@@ -61,7 +61,7 @@ It last between 10 and 20 minutes. At the end, you just have to reboot and enjoy
 
 ```sudo reboot```
 
-The stations plots will appears few seconds after reboot. Be patient !
+The stations plots will appear few seconds after reboot. Be patient !
 
 ## Spopi
 
@@ -79,7 +79,7 @@ You can modify them and choose which of those programs will start at the end of 
 
 ## Crontab
 Visualisation is set to start at boot and at 08h00 TU. It will automaticaly stop at 17h00 TU.
-You can change start and end of visualisation by editing the crontab:
+You can change start and stop of visualisation time by editing the crontab:
 ````crontab -e````
 
 ## Modify the settings 
