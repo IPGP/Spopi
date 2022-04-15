@@ -3,29 +3,17 @@
 sudo apt-get update
 
 # Usefull packages installation
-sudo apt-get install --force-yes -y python-matplotlib  pep8 python-dns python-dap python-lxml python-scipy vim mosh python-sqlalchemy python-suds python-tornado  subversion unclutter subversion xdotool dnsutils imagemagick libblas-dev liblapack-dev libatlas-base-dev gfortran libxslt1-dev tk-dev tk-dev tk8.6-dev tcl8.6-dev x11vnc htop
+sudo apt-get install --force-yes -y python-matplotlib  pep8 python-dns python-dap python-lxml python-scipy vim mosh python-sqlalchemy python-suds python-tornado  subversion unclutter subversion xdotool dnsutils imagemagick libblas-dev liblapack-dev libatlas-base-dev  libxslt1-dev tk-dev tk-dev tk8.6-dev tcl8.6-dev x11vnc htop
 # Remove  unused packages
 sudo apt-get --force-yes -y --purge remove   epiphany-.* scratch* sonic-pi libreoffice* claws-mail greenfoot bluej alacarte  wolfram-engine omxplayer python-picamera wpasupplicant
 sudo apt-get --force-yes -y autoremove
 
 
 # Obspy installation
-sudo pip install obspy
+sudo pip  --no-cache-dir install obspy
 
-sudo apt-get update
-sudo apt-get -y install python-obspy
+sudo pip  --no-cache-dir  install https://github.com/bonaime/seedlink_plotter/archive/master.zip
 
-#pip install lxml sqlalchemy
-
-#Seedlink-plotter install
-while [ ! -f /usr/local/bin/seedlink-plotter ]
-  do
-  sudo pip install https://github.com/bonaime/seedlink_plotter/archive/master.zip
-done
-
-#updates
-sudo apt-get --force-yes -y upgrade
-rpi-update
 
 
 #Disable screen_saver 
