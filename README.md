@@ -1,8 +1,8 @@
-Spopi can only work on Raspberry Pi 2 and 3
+Spopi can only work on Raspberry Pi > 2 
 
 # Installation
 
-## Raspbian 2016-02-26
+## Raspbian 2022-04-15 Bulleyes 11
 Download last Raspbian Jessie img [here](https://www.raspberrypi.org/downloads/raspbian/)
 * [Install Raspbian on Mac](https://www.raspberrypi.org/documentation/installation/installing-images/mac.md)
 * [Install Raspbian on Linux](https://www.raspberrypi.org/documentation/installation/installing-images/linux.md)
@@ -52,8 +52,6 @@ Now you can test the network:
 ## Spopi installation
  ````
 wget -O /tmp/spopi_install.bash https://raw.githubusercontent.com/IPGP/Spopi/master/spopi_install.bash 
-or
-wget -O /tmp/spopi_install.bash https://goo.gl/bEwmmC
 
 bash /tmp/spopi_install.bash
 ````
