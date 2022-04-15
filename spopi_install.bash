@@ -10,13 +10,7 @@ sudo apt-get --force-yes -y autoremove
 
 
 # Obspy installation
-if grep obspy /etc/apt/sources.list;
-  then echo "Obspy depo already installed"
-else
-  echo "Obspy depo not installed, installing"
-  sudo  sh -c 'echo  "deb http://deb.obspy.org jessie main" >> /etc/apt/sources.list'
-  sudo wget --quiet -O - https://raw.github.com/obspy/obspy/master/misc/debian/public.key | sudo apt-key add -
-fi
+sudo pip install obspy
 
 sudo apt-get update
 sudo apt-get -y install python-obspy
