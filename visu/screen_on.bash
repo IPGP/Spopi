@@ -11,7 +11,9 @@ xset s off
 /usr/bin/killall python
 
 # Force system time through NTP
-/usr/bin/sudo /usr/bin/sntp -s pool.ntp.org
+sudo service ntp stop
+sudo ntpdate pool.ntp.org
+sudo service ntp start
 
 #Examples
 
