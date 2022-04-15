@@ -4,14 +4,11 @@ sudo apt-get update
 
 # Usefull packages installation
 sudo apt-get install  -y  x11-utils  ntpdate  python3-pil.imagetk  vim mosh unclutter  xdotool dnsutils imagemagick libblas-dev libatlas-base-dev liblapack-dev libatlas-base-dev  libxslt1-dev tk-dev tk-dev tk8.6-dev tcl8.6-dev x11vnc htop
-# Remove  unused packages
-sudo apt-get --force-yes -y --purge remove   epiphany-.* scratch* sonic-pi libreoffice* claws-mail greenfoot bluej alacarte  wolfram-engine omxplayer python-picamera wpasupplicant
-sudo apt-get --force-yes -y autoremove
-
 
 # Obspy installation
 sudo pip  --no-cache-dir install obspy
 
+# Install seedlink_plotter
 sudo pip  --no-cache-dir  install https://github.com/bonaime/seedlink_plotter/archive/master.zip
 sudo pip install numpy --upgrade
 
@@ -46,7 +43,7 @@ chmod 755 /home/pi/visu/*
 
 #Crontabs
 (crontab -l ; echo "@reboot /usr/bin/unclutter -display :0 &") | crontab -
-(crontab -l ; echo "@reboot DISPLAY=:0 /home/pi/visu/screen_on.bash  2>/tmp/cron_stderr 1>/tmp/cron_stdout") | crontab -
+(crontab -l ; echo "@reboot sleep 20; DISPLAY=:0 /home/pi/visu/screen_on.bash  2>/tmp/cron_stderr 1>/tmp/cron_stdout") | crontab -
 (crontab -l ; echo "# Spopi On") | crontab -
 (crontab -l ; echo "00 08  * * *  DISPLAY=:0 /home/pi/visu/screen_on.bash  2>/tmp/cron_stderr 1>/tmp/cron_stdout") | crontab -
 (crontab -l ; echo "# Spopi Off") | crontab -
