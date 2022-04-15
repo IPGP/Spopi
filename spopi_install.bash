@@ -3,7 +3,7 @@
 sudo apt-get update
 
 # Usefull packages installation
-sudo apt-get install --force-yes -y python-matplotlib x11-utils pep8 ntpdate python-dns python3-pil.imagetk python-dap python-lxml python-scipy vim mosh python-sqlalchemy python-suds python-tornado  subversion unclutter subversion xdotool dnsutils imagemagick libblas-dev libatlas-base-dev liblapack-dev libatlas-base-dev  libxslt1-dev tk-dev tk-dev tk8.6-dev tcl8.6-dev x11vnc htop
+sudo apt-get install  -y  x11-utils  ntpdate  python3-pil.imagetk  vim mosh unclutter  xdotool dnsutils imagemagick libblas-dev libatlas-base-dev liblapack-dev libatlas-base-dev  libxslt1-dev tk-dev tk-dev tk8.6-dev tcl8.6-dev x11vnc htop
 # Remove  unused packages
 sudo apt-get --force-yes -y --purge remove   epiphany-.* scratch* sonic-pi libreoffice* claws-mail greenfoot bluej alacarte  wolfram-engine omxplayer python-picamera wpasupplicant
 sudo apt-get --force-yes -y autoremove
