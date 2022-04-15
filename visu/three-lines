@@ -39,7 +39,7 @@ $seedlink_p  --without-decoration --force  --seedlink_server "$server"  -s $net'
 
 #Station 3
 net='G'
-station='FDF'
+station='FDFM'
 channel='00BHZ'
 server=rtserver.ipgp.fr:18000
 
